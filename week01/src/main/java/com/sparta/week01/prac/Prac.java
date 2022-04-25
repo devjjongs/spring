@@ -47,8 +47,6 @@ public class Prac {
     public static int sub(int a, int b) {
         return a - b;
     }*/
-
-
     public static void main(String[] args) {
 
         /**[1주차]자바 기초 문법 -1*//*
@@ -66,8 +64,6 @@ public class Prac {
         float c = 3.7f;
         // 21억 이상
         Long d = 10000000000L;*/
-
-
         /**[1주차]자바 기초 문법 -2*//*
         // 참거짓
         int myAge = 20;
@@ -88,8 +84,6 @@ public class Prac {
         System.out.println(myList.get(1));
         myList.remove(1);
         System.out.println("myList : " + myList);*/
-
-
         /**[1주차]자바 기초 문법 -3 *//*
         // 메소드
         // 메소드가 없을때
@@ -131,9 +125,7 @@ public class Prac {
         // quiz
         int ret3 = sub(9, 2);
         System.out.println(ret3);*/
-
-
-        /**[1주차]자바 기초 문법 -4*/
+        /**[1주차]자바 기초 문법 -4*//*
         // 반복문
         // 과일 목록 준비
         List<String> fruits = new ArrayList<>();
@@ -209,7 +201,20 @@ public class Prac {
             System.out.println("성인입니다.");
         } else {
             System.out.println("미성년자입니다.");
-        }
+        }*/
+
+        /**[1주차]자바 클래스*/
+        Course course = new Course();
+        course.title = "웹개발의 봄, Spring";
+        course.tutor = "남병관";
+        System.out.println(course.title);
+        System.out.println(course.tutor);
+
+        Course course1 = new Course();
+        course1.title = "프론트엔드의 꽃, React";
+        course1.tutor = "임민영";
+        System.out.println(course1.title);
+        System.out.println(course1.tutor);
 
     }
 }
