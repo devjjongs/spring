@@ -204,17 +204,29 @@ public class Prac {
         }*/
 
         /**[1주차]자바 클래스*/
-        Course course = new Course();
-        course.title = "웹개발의 봄, Spring";
-        course.tutor = "남병관";
-        System.out.println(course.title);
-        System.out.println(course.tutor);
+        // 기본 생성자를 이용한 방식
+//        Course course = new Course();
+//        course.title = "웹개발의 봄, Spring";
+//        course.tutor = "남병관";
+//        System.out.println(course.title);
+//        System.out.println(course.tutor);
 
-        Course course1 = new Course();
-        course1.title = "프론트엔드의 꽃, React";
-        course1.tutor = "임민영";
-        System.out.println(course1.title);
-        System.out.println(course1.tutor);
+        // 일반 생성자 생성 후 사용
+        String title = "프론트엔드의 꽃, React";
+        String tutor = "임민영";
+        int days = 35;
+//        Course course = new Course(title, tutor, days);
+        Course course = new Course();
+        course.setTitle(title);
+        course.setTutor(tutor);
+        course.setDays(days);
+
+        System.out.println(course.getTitle());
+        System.out.println(course.getTutor());
+        System.out.println(course.getDays());
+
+
+        /**[1주차]Getter, Setter*/
 
     }
 }
